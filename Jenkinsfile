@@ -3,21 +3,28 @@ pipeline {
 
     environment {
         PYTHON = '/Library/Frameworks/Python.framework/Versions/3.14/bin/python3'
+        RCLONE = '/opt/homebrew/bin/rclone' // <-- caminho absoluto do rclone (ajuste se necessário)
     }
 
     stages {
         stage('Clonar do GitHub') {
             steps {
-                git branch: 'main', url: 'https://github.com/miguelofc/BackupAppPro.git', credentialsId: 'github-token'
+                git branch: 'main', 
+                    url: 'https://github.com/miguelofc/BackupAppPro.git', 
+                    credentialsId: 'github-token'
             }
         }
 
-        stage('Instalar dependências') {
+        stage('Instalar dependências (opcional)') {
             steps {
                 sh '''
-                which rclone || brew install rclone || true
-                ${PYTHON} -m pip install --upgrade pip || true
-                ${PYTHON} -m pip install -r requirements.txt || true
+                if [ -f requirements.txt ]; then
+                    echo "Instalando dependências..."
+                    ${PYTHON} -m pip install --upgrade pip || true
+                    ${PYTHON} -m pip install -r requirements.txt || true
+                else
+                    echo "Nenhum requirements.txt encontrado, pulando instalação de dependências."
+                fi
                 '''
             }
         }
@@ -32,7 +39,7 @@ pipeline {
             }
         }
 
-        stage('Commit logs (opcional)') {
+        stage('Commit logs') {
             steps {
                 sh '''
                 git config user.email "jenkins@localhost" || true
