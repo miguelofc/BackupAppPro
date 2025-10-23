@@ -1,0 +1,51 @@
+-----------------------------------------------
+⏰ 2025-10-22 20:12:04 - Executando backup...
+  adding: Users/miguel/Backups/backup_2025-10-22_20-12-04/ (stored 0%)
+  adding: Users/miguel/Backups/backup_2025-10-22_20-12-04/vitta+.png (deflated 3%)
+  adding: Users/miguel/Backups/backup_2025-10-22_20-12-04/PALMEIRAS.png (deflated 1%)
+  adding: Users/miguel/Backups/backup_2025-10-22_20-12-04/VittaPlus_Apresentacao.pdf (deflated 12%)
+  adding: Users/miguel/Backups/backup_2025-10-22_20-12-04/CRUZEIRO.png (deflated 1%)
+  adding: Users/miguel/Backups/backup_2025-10-22_20-12-04/natureza.pdf (deflated 1%)
+✅ Backup incremental criado: /Users/miguel/Backups/backup_2025-10-22_20-12-04
+📦 Backup compactado em: /Users/miguel/Backups/backup_2025-10-22_20-12-04.zip
+☁️ Enviando backup para o Google Drive...
+✅ Upload concluído com sucesso!
+✅ Backup finalizado às 20:14:01
+-----------------------------------------------
+⏰ 2025-10-22 20:16:01 - Executando backup...
+  adding: Users/miguel/Backups/backup_2025-10-22_20-16-01/ (stored 0%)
+  adding: Users/miguel/Backups/backup_2025-10-22_20-16-01/vitta+.png (deflated 3%)
+  adding: Users/miguel/Backups/backup_2025-10-22_20-16-01/PALMEIRAS.png (deflated 1%)
+  adding: Users/miguel/Backups/backup_2025-10-22_20-16-01/VittaPlus_Apresentacao.pdf (deflated 12%)
+  adding: Users/miguel/Backups/backup_2025-10-22_20-16-01/CRUZEIRO.png (deflated 1%)
+  adding: Users/miguel/Backups/backup_2025-10-22_20-16-01/natureza.pdf (deflated 1%)
+✅ Backup incremental criado: /Users/miguel/Backups/backup_2025-10-22_20-16-01
+📦 Backup compactado em: /Users/miguel/Backups/backup_2025-10-22_20-16-01.zip
+☁️ Enviando backup para o Google Drive...
+✅ Upload concluído com sucesso!
+✅ Backup finalizado às 20:17:43
+-----------------------------------------------
+⏰ 2025-10-22 20:19:43 - Executando backup...
+  adding: Users/miguel/Backups/backup_2025-10-22_20-19-43/ (stored 0%)
+  adding: Users/miguel/Backups/backup_2025-10-22_20-19-43/vitta+.png (deflated 3%)
+  adding: Users/miguel/Backups/backup_2025-10-22_20-19-43/PALMEIRAS.png (deflated 1%)
+  adding: Users/miguel/Backups/backup_2025-10-22_20-19-43/VittaPlus_Apresentacao.pdf (deflated 12%)
+  adding: Users/miguel/Backups/backup_2025-10-22_20-19-43/CRUZEIRO.png (deflated 1%)
+  adding: Users/miguel/Backups/backup_2025-10-22_20-19-43/natureza.pdf (deflated 1%)
+✅ Backup incremental criado: /Users/miguel/Backups/backup_2025-10-22_20-19-43
+📦 Backup compactado em: /Users/miguel/Backups/backup_2025-10-22_20-19-43.zip
+☁️ Enviando backup para o Google Drive...
+Traceback (most recent call last):
+  File "/Users/miguel/BackupAppPro/backup_auto.py", line 39, in <module>
+    subprocess.run(["rclone", "copy", zip_file, "gdrive:BackupAppPro/"], check=True)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 507, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1126, in communicate
+    self.wait()
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1189, in wait
+    return self._wait(timeout=timeout)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1917, in _wait
+    (pid, sts) = self._try_wait(0)
+  File "/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/subprocess.py", line 1875, in _try_wait
+    (pid, sts) = os.waitpid(self.pid, wait_flags)
+KeyboardInterrupt

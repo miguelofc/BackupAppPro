@@ -1,0 +1,31 @@
+2025-10-22 20:12:05,135 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-22_20-12-04
+2025-10-22 20:12:06,137 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-22_20-12-04.zip
+2025-10-22 20:14:01,250 [INFO] Upload concluído: /Users/miguel/Backups/backup_2025-10-22_20-12-04.zip
+2025-10-22 20:16:01,790 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-22_20-16-01
+2025-10-22 20:16:02,781 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-22_20-16-01.zip
+2025-10-22 20:17:43,357 [INFO] Upload concluído: /Users/miguel/Backups/backup_2025-10-22_20-16-01.zip
+2025-10-22 20:19:43,888 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-22_20-19-43
+2025-10-22 20:19:44,900 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-22_20-19-43.zip
+2025-10-23 00:13:07,568 [INFO] Pasta de backup criada: /Users/miguel/Backups/backup_2025-10-23_00-13-07
+2025-10-23 00:13:11,468 [INFO] Pasta de backup criada: /Users/miguel/Backups/backup_2025-10-23_00-13-11
+2025-10-23 00:13:14,619 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-23_00-13-11
+2025-10-23 00:13:14,619 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-23_00-13-07
+2025-10-23 00:13:15,739 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-23_00-13-11.zip
+2025-10-23 00:13:15,739 [INFO] Enviando backup para o Google Drive...
+2025-10-23 00:13:15,749 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-23_00-13-07.zip
+2025-10-23 00:13:15,749 [INFO] Enviando backup para o Google Drive...
+2025-10-23 00:13:24,333 [INFO] Upload concluído: /Users/miguel/Backups/backup_2025-10-23_00-13-07.zip
+2025-10-23 00:13:24,540 [INFO] Upload concluído: /Users/miguel/Backups/backup_2025-10-23_00-13-11.zip
+2025-10-23 00:15:24,633 [INFO] Pasta de backup criada: /Users/miguel/Backups/backup_2025-10-23_00-15-24
+2025-10-23 00:15:24,905 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-23_00-15-24
+2025-10-23 00:15:25,877 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-23_00-15-24.zip
+2025-10-23 00:15:25,878 [INFO] Enviando backup para o Google Drive...
+2025-10-23 00:15:34,286 [INFO] Upload concluído: /Users/miguel/Backups/backup_2025-10-23_00-15-24.zip
+2025-10-23 00:17:34,504 [INFO] Pasta de backup criada: /Users/miguel/Backups/backup_2025-10-23_00-17-34
+2025-10-23 00:17:34,791 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-23_00-17-34
+2025-10-23 00:17:35,785 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-23_00-17-34.zip
+2025-10-23 00:17:35,786 [INFO] Enviando backup para o Google Drive...
+2025-10-23 00:17:44,024 [INFO] Upload concluído: /Users/miguel/Backups/backup_2025-10-23_00-17-34.zip
+2025-10-23 00:21:58,205 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-23_00-21-40
+2025-10-23 00:21:58,612 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-23_00-21-40.zip
+2025-10-23 00:22:04,734 [INFO] Upload concluído: /Users/miguel/Backups/backup_2025-10-23_00-21-40.zip
