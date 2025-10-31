@@ -1,207 +1,281 @@
-🗄️ BackupAppPro
+# 🗄️ BackupAppPro — Backup Automático Inteligente
 
+<p align="center">
+Proteja seus arquivos com backups automáticos, compactados e simples de configurar 🚀
+</p>
 
-⸻
+<p align="center">
+<a href="https://github.com/miguelofc/BackupAppPro">
+<img src="https://img.shields.io/github/repo-size/miguelofc/BackupAppPro?style=for-the-badge">
+</a>
+<a href="https://www.python.org/">
+<img src="https://img.shields.io/badge/python-3.14-blue?style=for-the-badge">
+</a>
+<a href="LICENSE">
+<img src="https://img.shields.io/github/license/miguelofc/BackupAppPro?style=for-the-badge">
+</a>
+</p>
 
-🚀 Visão Geral
+---
 
-BackupAppPro é um sistema de backup automático em Python 3.14, com GUI (Tkinter) opcional, Google Drive via Rclone, logs detalhados e automação com GitHub e Jenkins.
+📌 *Click here for English version*:  
+➡️ [`README-EN.md`](README-EN.md)
 
-✔ Backup seguro e automatizado
-✔ Pensado para usuários e empresas
+---
 
-⸻
+## 📑 Índice
 
-🧩 Funcionalidades
-	•	✅ Backup incremental automático
-	•	✅ Compactação em .zip
-	•	✅ Upload para Google Drive com rclone
-	•	✅ Interface gráfica para facilitar o uso
-	•	✅ Execução automática via cron/Task Scheduler
-	•	✅ Logs completos (backup.log + run_backup.log)
-	•	✅ Integração com CI/CD (GitHub Actions + Jenkins)
-	•	✅ Notificações via Telegram (opcional)
+- [Sobre o Projeto](#-sobre-o-projeto)
+- [Funcionalidades](#-funcionalidades)
+- [Instalação](#-instalação)
+- [Como Usar](#-como-usar)
+- [Automação de Backup](#-automação-de-backup)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Autor](#-autor)
+- [Licença](#-licença)
 
-⸻
+---
 
-🗂️ Estrutura do Projeto
+## 🚀 Sobre o Projeto
 
-BackupAppPro/
-├── backup_auto.py          # Script principal de backup
-├── backup_gui_pro.py       # GUI em Tkinter
-├── run_backup.sh           # Execução em loop
-├── backup.log              # Log do backup
-├── run_backup.log          # Log do script de loop
-├── Jenkinsfile             # Pipeline Jenkins
-├── requirements.txt        # Dependências Python
-└── README.md               # Documentação
+O **BackupAppPro** é um sistema de backup automático em **Python**, com:
 
+✔ Execução manual ou automática  
+✔ Interface gráfica (GUI) amigável  
+✔ Compactação em `.zip`  
+✔ Logs detalhados  
+✔ Backup incremental eficiente  
 
-⸻
+Simples e seguro para qualquer usuário!
 
-💻 Requisitos
-	•	macOS 12+ ou Linux
-	•	Python 3.10+ (recomendado 3.14)
-	•	Rclone
+---
 
- brew install rclone
+## 🔧 Funcionalidades
 
+- ✅ Backup automático e incremental
+- ✅ Compactação ZIP
+- ✅ Seleção simples de pastas pela GUI
+- ✅ Log de execução (`backup.log`)
+- ✅ Script CLI para execução rápida
+- ✅ Automação via cron/Task Scheduler
 
-	•	Git
-	•	(Opcional) Jenkins LTS
-	•	(Opcional) Token e Chat ID do Telegram
+---
 
-⸻
+## 💻 Instalação
 
-⚙️ Instalação
-
-1️⃣ Clonar o repositório
-
-git clone https://github.com/seuusuario/BackupAppPro.git
+```bash
+git clone https://github.com/miguelofc/BackupAppPro.git
 cd BackupAppPro
-
-2️⃣ Instalar dependências
 
 python3 -m pip install --upgrade pip
 python3 -m pip install -r requirements.txt
 
-3️⃣ Configurar Google Drive via Rclone
-
-rclone config
-
-Crie um remote chamado gdrive e autentique sua conta Google.
 
 ⸻
 
-🖥️ Uso com Interface Gráfica
+🖥️ Como Usar
+
+▶️ Modo Gráfico (GUI)
 
 python3 backup_gui_pro.py
 
-✔ Seleção de pastas
-✔ Backup manual
-✔ Logs em tempo real
+✅ Seleção das pastas
+✅ Botão para iniciar o backup
+✅ Logs na interface
 
 ⸻
 
-🖥️ Uso por Linha de Comando / Automação
-
-Execução manual:
+🧑‍💻 Modo Terminal
 
 python3 backup_auto.py
 
-Loop automático a cada 2 minutos:
-
-bash run_backup.sh
-
 
 ⸻
 
-🌐 Integração com GitHub
+⏱️ Automação de Backup
 
-Criar versionamento e subir para GitHub:
+Cron — a cada 2 minutos (Linux/macOS)
 
-git init
-git add .
-git commit -m "Versão inicial"
-git branch -M main
-git remote add origin https://github.com/seuusuario/BackupAppPro.git
-git push -u origin main
+*/2 * * * * /usr/bin/python3 /caminho/BackupAppPro/backup_auto.py
 
+📌 Substitua o caminho conforme seu sistema
 
 ⸻
 
-🤖 Integração com Jenkins
+📂 Estrutura do Projeto
 
-Instalar Jenkins (macOS)
+BackupAppPro/
+├── backup_auto.py
+├── backup_gui_pro.py
+├── run_backup.sh
+├── backup.log
+├── requirements.txt
+└── README.md
 
-brew install jenkins-lts
-brew services start jenkins-lts
-
-Acesse: http://localhost:8080
-
-⸻
-
-Pipeline no Jenkins
-	•	Criar novo job → Pipeline
-	•	Selecionar “Script from SCM” → Git
-	•	Informar repositório + branch main
-	•	Usar o Jenkinsfile abaixo 👇
-
-pipeline {
-    agent any
-
-    environment {
-        PYTHON = 'python3'
-    }
-
-    stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/seuusuario/BackupAppPro.git'
-            }
-        }
-        stage('Instalar dependências') {
-            steps {
-                sh '''
-                ${PYTHON} -m pip install --upgrade pip
-                ${PYTHON} -m pip install -r requirements.txt
-                '''
-            }
-        }
-        stage('Executar Backup') {
-            steps {
-                sh '${PYTHON} backup_auto.py'
-            }
-        }
-        stage('Arquivar Logs') {
-            steps {
-                archiveArtifacts artifacts: '*.log', allowEmptyArchive: true
-            }
-        }
-    }
-}
-
-
-⸻
-
-⏱️ Agendamentos
-
-Cron — Executar todo dia às 02:00
-
-0 2 * * * /usr/bin/python3 /caminho/BackupAppPro/backup_auto.py
-
-Jenkins — Cada 2 minutos
-
-H/2 * * * *
-
-
-⸻
-
-🗂️ Logs
-	•	backup.log → Relatório do backup
-	•	run_backup.log → Execução da automação shell
-	•	Jenkins Console → CI/CD detalhado
-
-⸻
-
-🧠 Dicas Avançadas
-	•	Transformar em app macOS:
-
- pyinstaller --onefile --windowed backup_gui_pro.py
-
-
-	•	Adicionar notificações (Telegram, Slack, Email)
-	•	Upload para S3, FTP ou servidores remotos via Rclone
 
 ⸻
 
 👤 Autor
 
 Miguel Ângelo Moraes de Almeida
-📌 Pernambuco - Brasil
 📧 miguelofc29@gmail.com
+📍 Pernambuco - Brasil
 
 ⸻
 
-“Automatizar é libertar tempo para o que realmente importa.”
-— BackupAppPro
+🛡️ Licença
+
+Distribuído sob MIT License — consulte o arquivo LICENSE.
+
+⸻
+
+“Automatizar é dar mais tempo ao que realmente importa.”
+— BackupAppPro 🚀
+
+---
+
+# 🌎 `README-EN.md` — Inglês 🇺🇸
+
+> ✅ Fica ao lado do README principal, com link cruzado
+
+```md
+# 🗄️ BackupAppPro — Smart Automatic Backup System
+
+<p align="center">
+Keep your files safe with automated and compressed backups, easy to set up 🚀
+</p>
+
+<p align="center">
+<a href="https://github.com/miguelofc/BackupAppPro">
+<img src="https://img.shields.io/github/repo-size/miguelofc/BackupAppPro?style=for-the-badge">
+</a>
+<a href="https://www.python.org/">
+<img src="https://img.shields.io/badge/python-3.14-blue?style=for-the-badge">
+</a>
+<a href="LICENSE">
+<img src="https://img.shields.io/github/license/miguelofc/BackupAppPro?style=for-the-badge">
+</a>
+</p>
+
+---
+
+📌 *Versão em Português*:  
+➡️ [`README.md`](README.md)
+
+---
+
+## 📑 Table of Contents
+
+- [About](#-about)
+- [Features](#-features)
+- [Installation](#-installation)
+- [How to Use](#-how-to-use)
+- [Backup Automation](#-backup-automation)
+- [Project Structure](#-project-structure)
+- [Author](#-author)
+- [License](#-license)
+
+---
+
+## 🚀 About
+
+**BackupAppPro** is an automated backup tool built with **Python**, featuring:
+
+✔ Manual or automated execution  
+✔ Graphical User Interface  
+✔ ZIP compression  
+✔ Detailed logs  
+✔ Smart incremental backup system
+
+Fast and secure for anyone!
+
+---
+
+## 🔧 Features
+
+- ✅ Automatic and incremental backup
+- ✅ ZIP compression
+- ✅ GUI folder selection
+- ✅ Execution logs (`backup.log`)
+- ✅ CLI for batch usage
+- ✅ Cron/Task Scheduler compatible
+
+---
+
+## 💻 Installation
+
+```bash
+git clone https://github.com/miguelofc/BackupAppPro.git
+cd BackupAppPro
+
+python3 -m pip install --upgrade pip
+python3 -m pip install -r requirements.txt
+
+
+⸻
+
+🖥️ How to Use
+
+▶️ GUI Mode
+
+python3 backup_gui_pro.py
+
+🧑‍💻 Command Line Mode
+
+python3 backup_auto.py
+
+
+⸻
+
+⏱️ Backup Automation
+
+Cron — every 2 minutes (Linux/macOS)
+
+*/2 * * * * /usr/bin/python3 /path/BackupAppPro/backup_auto.py
+
+
+⸻
+
+📂 Project Structure
+
+BackupAppPro/
+├── backup_auto.py
+├── backup_gui_pro.py
+├── run_backup.sh
+├── backup.log
+├── requirements.txt
+└── README.md
+
+
+⸻
+
+👤 Author
+
+Miguel Ângelo Moraes de Almeida
+📧 miguelofc29@gmail.com
+📍 Pernambuco - Brazil
+
+⸻
+
+🛡️ License
+
+Released under the MIT License — see LICENSE.
+
+⸻
+
+“Automation is freedom to focus on what truly matters.”
+— BackupAppPro 🚀
+
+---
+
+## ✅ O que fazer agora?
+
+Basta colar esses arquivos no seu repositório e rodar:
+
+```bash
+git add README.md README-EN.md
+git commit -m "Refatoração visual do README + versão em inglês"
+git push origin main
+
+
+⸻
