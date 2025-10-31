@@ -29,3 +29,33 @@
 2025-10-23 00:21:58,205 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-23_00-21-40
 2025-10-23 00:21:58,612 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-23_00-21-40.zip
 2025-10-23 00:22:04,734 [INFO] Upload concluído: /Users/miguel/Backups/backup_2025-10-23_00-21-40.zip
+2025-10-23 02:00:10,163 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-23_02-00-09
+2025-10-23 02:00:11,148 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-23_02-00-09.zip
+2025-10-23 02:00:11,149 [ERROR] Erro inesperado: [Errno 2] No such file or directory: 'rclone'
+2025-10-23 02:12:57,565 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-23_02-12-57
+2025-10-23 02:12:58,531 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-23_02-12-57.zip
+2025-10-23 02:12:58,532 [ERROR] Erro inesperado: [Errno 2] No such file or directory: 'rclone'
+2025-10-23 02:16:36,223 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-23_02-16-31
+2025-10-23 02:16:36,324 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-23_02-16-31.zip
+2025-10-23 02:16:39,980 [INFO] Upload concluído: /Users/miguel/Backups/backup_2025-10-23_02-16-31.zip
+2025-10-24 18:30:05,078 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-24_18-30-04
+2025-10-24 18:30:06,107 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-24_18-30-04.zip
+2025-10-24 18:30:06,109 [ERROR] Erro inesperado: [Errno 2] No such file or directory: 'rclone'
+2025-10-25 02:13:32,747 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-25_02-13-32
+2025-10-25 02:13:33,737 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-25_02-13-32.zip
+2025-10-25 02:13:33,740 [ERROR] Erro inesperado: [Errno 2] No such file or directory: 'rclone'
+2025-10-26 02:05:35,534 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-26_02-05-35
+2025-10-26 02:05:36,527 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-26_02-05-35.zip
+2025-10-26 02:05:36,528 [ERROR] Erro inesperado: [Errno 2] No such file or directory: 'rclone'
+2025-10-27 02:05:14,963 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-27_02-05-14
+2025-10-27 02:05:15,960 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-27_02-05-14.zip
+2025-10-27 02:05:15,961 [ERROR] Erro inesperado: [Errno 2] No such file or directory: 'rclone'
+2025-10-28 02:05:14,361 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-28_02-05-13
+2025-10-28 02:05:15,348 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-28_02-05-13.zip
+2025-10-28 02:05:15,350 [ERROR] Erro inesperado: [Errno 2] No such file or directory: 'rclone'
+2025-10-29 02:01:52,498 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-29_02-01-51
+2025-10-29 02:01:53,462 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-29_02-01-51.zip
+2025-10-29 02:01:53,465 [ERROR] Erro inesperado: [Errno 2] No such file or directory: 'rclone'
+2025-10-30 03:31:02,460 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-30_03-31-01
+2025-10-30 03:46:29,356 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-30_03-31-01.zip
+2025-10-30 03:46:29,357 [ERROR] Erro inesperado: [Errno 2] No such file or directory: 'rclone'
