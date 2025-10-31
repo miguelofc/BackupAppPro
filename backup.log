@@ -62,3 +62,6 @@
 2025-10-31 18:39:14,730 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-31_18-39-14
 2025-10-31 18:39:15,685 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-31_18-39-14.zip
 2025-10-31 18:39:15,686 [ERROR] Erro inesperado: [Errno 2] No such file or directory: 'rclone'
+2025-10-31 18:54:10,522 [INFO] Backup incremental criado: /Users/miguel/Backups/backup_2025-10-31_18-54-10
+2025-10-31 18:54:11,472 [INFO] Backup compactado: /Users/miguel/Backups/backup_2025-10-31_18-54-10.zip
+2025-10-31 18:54:11,473 [ERROR] Erro inesperado: [Errno 2] No such file or directory: 'rclone'
