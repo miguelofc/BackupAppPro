@@ -1,10 +1,3 @@
-Perfeito! 😎 Então vamos deixar seu README profissional nível GitHub trending, mantendo somente a versão em português e com o estilo Tech Moderno.
-
-Aqui está a versão final, visualmente organizada e atraente, pronta para colocar no GitHub:
-
-⸻
-
-
 # 🗄️ BackupAppPro — Backup Automático Inteligente
 
 <p align="center">
@@ -91,31 +84,37 @@ python3 -m pip install -r requirements.txt
 
 ```bash
 python3 backup_gui_pro.py
+```
 
-	•	Selecione pastas de origem e destino
-	•	Clique em iniciar backup
-	•	Visualize os logs em tempo real
+- Selecione pastas de origem e destino  
+- Clique em iniciar backup  
+- Visualize os logs em tempo real  
 
-🧑‍💻 Modo Terminal (CLI)
+### 🧑‍💻 Modo Terminal (CLI)
 
+```bash
 python3 backup_auto.py
+```
 
-	•	Executa backup rápido sem GUI
+- Executa backup rápido sem GUI  
 
-⸻
+---
 
-⏱️ Automação de Backup
+## ⏱️ Automação de Backup
 
-Cron — a cada 2 minutos (Linux/macOS)
+### Cron — a cada 2 minutos (Linux/macOS)
 
+```bash
 */2 * * * * /usr/bin/python3 /caminho/BackupAppPro/backup_auto.py
+```
 
 📌 Substitua o caminho conforme seu sistema
 
-⸻
+---
 
-📂 Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
+```
 BackupAppPro/
 ├── backup_auto.py       # Script principal do backup
 ├── backup_gui_pro.py    # Interface gráfica (GUI)
@@ -123,40 +122,23 @@ BackupAppPro/
 ├── backup.log           # Log do backup
 ├── requirements.txt     # Dependências Python
 └── README.md            # Documentação
-
-
-⸻
-
-👤 Autor
-
-Miguel Ângelo Moraes de Almeida
-📧 miguelofc29@gmail.com
-📍 Pernambuco - Brasil
-
-⸻
-
-🛡️ Licença
-
-Distribuído sob MIT License — consulte o arquivo LICENSE.
-
-⸻
-
-“Automatizar é dar mais tempo ao que realmente importa.”
-— BackupAppPro 🚀
+```
 
 ---
 
-✅ **O que foi melhorado visualmente:**
+## 👤 Autor
 
-1. **Tabela centralizada** para funcionalidades — mais clara e profissional  
-2. **Blocos de código (`bash`) padronizados** com respiro visual  
-3. **Seções com espaçamento correto** — GitHub renderiza perfeitamente  
-4. **Emojis e ícones equilibrados** para manter tech moderno  
-5. **Badges centralizados** no topo  
-6. **Estrutura limpa, legível e agradável de ler**  
+**Miguel Ângelo Moraes de Almeida**  
+📧 miguelofc29@gmail.com  
+📍 Pernambuco - Brasil  
 
 ---
 
-Se você quiser, posso **gerar também um mock de GUI** e colocar **prints estilizados dentro do README**, que deixa ele ainda mais chamativo e profissional, igual aos repositórios trending no GitHub.  
+## 🛡️ Licença
 
-Quer que eu faça isso? 🎨🚀
+Distribuído sob **MIT License** — consulte o arquivo `LICENSE`.
+
+---
+
+> “Automatizar é dar mais tempo ao que realmente importa.”  
+> — BackupAppPro 🚀
