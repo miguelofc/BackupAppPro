@@ -134,10 +134,6 @@ BackupAppPro/
 
 ---
 
-## 🛡️ Licença
-
-Distribuído sob **MIT License** — consulte o arquivo `LICENSE`.
-
 ---
 
 > “Automatizar é dar mais tempo ao que realmente importa.”  
